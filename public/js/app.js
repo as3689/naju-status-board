@@ -5,6 +5,7 @@
    const STORAGE_KEY = "naju_status_board_v2";
    const DAYS_KEY = "naju_days_settings";
    const API = "";
+   const CLEAR_PASSWORD = "farm1234";
    
    let data = null;
    let currentSheet = null;
@@ -15,6 +16,34 @@
      transplantDays: 21,
      formalDays: 23
    };
+   
+   const SHEETS_16_17 = ["16동", "17동"];
+   const ZONES_16_17 = ["B1","B2","E7","E6","E5","E4","E3","E2","E1","D6","D5","D4","D3","D2","D1","C3","C2","C1"];
+   
+   function is7FloorZone(sheetName, zone) {
+     if (sheetName === "16동" || sheetName === "17동") {
+       return ["B1","B2","E7","E6","E5","E4","E3","E2","E1","D6","D5"].includes(zone);
+     }
+     if (sheetName === "5동" || sheetName === "24동" || sheetName === "25동") {
+       return ["E7","E6","E5","E4","E3","E2","E1","D6","D5"].includes(zone);
+     }
+     if (sheetName === "22동" || sheetName === "22-2동") {
+       return ["E6","E5","E4","E3","E2","E1"].includes(zone);
+     }
+     if (sheetName === "22-1동") {
+       return zone === "B1" || zone === "B2";
+     }
+     return false;
+   }
+   
+   function maxFloorIndex(sheetName, zone, floorCount) {
+     if (is7FloorZone(sheetName, zone)) return 6;
+     return floorCount - 1;
+   }
+   
+   function isDisabledFloor(sheetName, zone, fi) {
+     return fi > maxFloorIndex(sheetName, zone, 8);
+   }
    
    function loadGlobalDays() {
      try {
@@ -46,12 +75,12 @@
        },
        "16동": {
          type: "정식", formalDays: 23, nurseryDays: 7, transplantDays: 21,
-         zones: ["B1","B2","B3","E6","E5","E4","E3","E2","E1","D6","D5","D4","D3","D2","D1","C3","C2","C1"],
+         zones: ZONES_16_17.slice(),
          floors: ["1층","2층","3층","4층","5층","6층","7층","8층"]
        },
        "17동": {
          type: "정식", formalDays: 23, nurseryDays: 7, transplantDays: 21,
-         zones: ["B1","B2","B3","E6","E5","E4","E3","E2","E1","D6","D5","D4","D3","D2","D1","C3","C2","C1"],
+         zones: ZONES_16_17.slice(),
          floors: ["1층","2층","3층","4층","5층","6층","7층","8층"]
        },
        "22동": {
@@ -146,6 +175,9 @@
    const isSideCell = (sheetName, zone, floorIndex) =>
      sheetName === "22-1동" && (zone === "B1" || zone === "B2") && floorIndex <= 1;
    
+   const firstSheetName = () =>
+     Object.keys(data || {}).find(k => !k.startsWith("_")) || null;
+   
    const cellOf = (sheet, fi, zi) => {
      const row = sheet.plants[fi];
      if (!row) return { sow: null, plant: null };
@@ -168,13 +200,37 @@
      sheet.plants[fi][zi] = c;
    };
    
+   function normalizeCell(c) {
+     if (!c) return { sow: null, plant: null };
+     if (typeof c === "string") return { sow: null, plant: c };
+     if (c.left != null) return { sow: null, plant: null };
+     return { sow: c.sow || null, plant: c.plant || null };
+   }
+   
    /* ---------- 데이터 정규화 ---------- */
    function normalizeData(raw) {
      Object.keys(raw).forEach(name => {
+       if (name.startsWith("_")) return;
        const sheet = raw[name];
        sheet.nurseryDays    ??= 7;
        sheet.transplantDays ??= 21;
        sheet.formalDays     ??= 23;
+   
+       if (SHEETS_16_17.includes(name)) {
+         const oldZones = (sheet.zones || []).map(z => z === "B3" ? "E7" : z);
+         const oldPlants = sheet.plants || [];
+         sheet.zones = ZONES_16_17.slice();
+         if (!sheet.floors?.length) {
+           sheet.floors = ["1층","2층","3층","4층","5층","6층","7층","8층"];
+         }
+         sheet.plants = sheet.floors.map((_, fi) =>
+           sheet.zones.map(z => {
+             const oi = oldZones.indexOf(z);
+             return normalizeCell(oi >= 0 ? oldPlants[fi]?.[oi] : null);
+           })
+         );
+         return;
+       }
    
        if (name === "22-1동") {
          sheet.zones = ["B1","B2","C1","C2","C3","C4","C5","C6"];
@@ -189,25 +245,20 @@
                if (old && old.left != null) return old;
                return emptySideCell();
              }
-             const old = oldPlants[fi]?.[zi];
-             if (!old) return { sow: null, plant: null };
-             if (typeof old === "string") return { sow: null, plant: old };
-             if (old.left != null) return { sow: null, plant: null };
-             return { sow: old.sow || null, plant: old.plant || null };
+             return normalizeCell(oldPlants[fi]?.[zi]);
            });
          });
        } else {
          sheet.plants = (sheet.plants || []).map(row =>
-           (row || []).map(c => {
-             if (!c) return { sow: null, plant: null };
-             if (typeof c === "string") return { sow: null, plant: c };
-             if (c.left != null) return { sow: null, plant: null };
-             return { sow: c.sow || null, plant: c.plant || null };
-           })
+           (row || []).map(c => normalizeCell(c))
          );
        }
      });
      return raw;
+   }
+   
+   async function ensureFloorsFlipped() {
+     return;
    }
    
    /* ---------- DB / localStorage ---------- */
@@ -253,45 +304,45 @@
    };
    
    async function loadData() {
-    try {
-      const health = await apiGet("/api/health");
-      if (health?.ok) {
-        const remote = await apiGet("/api/data");
-        useDB = true;
-        setDbStatus(true);
-  
-        if (remote && Object.keys(remote).length) {
-          data = normalizeData(remote);
-        } else {
-          data = normalizeData(JSON.parse(JSON.stringify(DEFAULT_DATA)));
-          try { await apiPost("/api/import", data); } catch (e) {}
-        }
-  
-        localBackup();
-        return;
-      }
-    } catch (_) {
-      console.log("DB 서버 연결 실패");
-    }
-  
-    useDB = false;
-    setDbStatus(false, "○ 로컬모드 (서버 미실행)");
-  
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        data = normalizeData(JSON.parse(raw));
-        Object.keys(DEFAULT_DATA).forEach(k => {
-          if (!data[k]) {
-            data[k] = normalizeData({ t: JSON.parse(JSON.stringify(DEFAULT_DATA[k])) }).t;
-          }
-        });
-        return;
-      }
-    } catch (e) { console.error(e); }
-  
-    data = normalizeData(JSON.parse(JSON.stringify(DEFAULT_DATA)));
-  }
+     try {
+       const health = await apiGet("/api/health");
+       if (health?.ok) {
+         const remote = await apiGet("/api/data");
+         useDB = true;
+         setDbStatus(true);
+   
+         if (remote && Object.keys(remote).some(k => !k.startsWith("_"))) {
+           data = normalizeData(remote);
+         } else {
+           data = normalizeData(JSON.parse(JSON.stringify(DEFAULT_DATA)));
+           try { await apiPost("/api/import", data); } catch (e) {}
+         }
+   
+         localBackup();
+         return;
+       }
+     } catch (_) {
+       console.log("DB 서버 연결 실패");
+     }
+   
+     useDB = false;
+     setDbStatus(false, "○ 로컬모드 (서버 미실행)");
+   
+     try {
+       const raw = localStorage.getItem(STORAGE_KEY);
+       if (raw) {
+         data = normalizeData(JSON.parse(raw));
+         Object.keys(DEFAULT_DATA).forEach(k => {
+           if (!data[k]) {
+             data[k] = normalizeData({ t: JSON.parse(JSON.stringify(DEFAULT_DATA[k])) }).t;
+           }
+         });
+         return;
+       }
+     } catch (e) { console.error(e); }
+   
+     data = normalizeData(JSON.parse(JSON.stringify(DEFAULT_DATA)));
+   }
    
    const saveData = () => {
      localBackup();
@@ -319,49 +370,47 @@
            catch (_) { showToast("로컬만 적용됨"); }
          } else showToast("불러오기 완료");
          renderTabs();
-         renderBoard(currentSheet || Object.keys(data)[0]);
+         renderBoard(currentSheet || firstSheetName());
        } catch (_) { alert("JSON 파일이 올바르지 않습니다."); }
      };
      reader.readAsText(file);
      ev.target.value = "";
    };
-   const CLEAR_PASSWORD = "farm1234";
+   
    async function clearCurrentSheet() {
-    if (!currentSheet || !data[currentSheet]) return;
-  
-    const pw = prompt("초기화 비밀번호를 입력하세요");
-    if (pw !== CLEAR_PASSWORD) {
-      alert("비밀번호가 올바르지 않습니다.");
-      return;
-    }
-  
-    if (!confirm("현재 동의 모든 날짜를 지우시겠습니까?")) return;
-  
-    const sheet = data[currentSheet];
-    if (currentSheet === "22-1동") {
-      sheet.plants = sheet.floors.map((_, fi) =>
-        sheet.zones.map(z => {
-          if ((z === "B1" || z === "B2") && fi <= 1) return emptySideCell();
-          return { sow: null, plant: null };
-        })
-      );
-    } else {
-      sheet.plants = sheet.floors.map(() => sheet.zones.map(() => ({ sow: null, plant: null })));
-    }
-  
-    localBackup();
-    if (useDB) {
-      try {
-        await apiPost("/api/clear", { sheet: currentSheet, password: pw });
-      } catch (e) {
-        console.error(e);
-        alert("서버 초기화 실패");
-        return;
-      }
-    }
-    renderBoard(currentSheet);
-    showToast("초기화됨");
-  }
+     if (!currentSheet || !data[currentSheet]) return;
+   
+     const pw = prompt("초기화 비밀번호를 입력하세요");
+     if (pw !== CLEAR_PASSWORD) {
+       alert("비밀번호가 올바르지 않습니다.");
+       return;
+     }
+     if (!confirm("현재 동의 모든 날짜를 지우시겠습니까?")) return;
+   
+     const sheet = data[currentSheet];
+     if (currentSheet === "22-1동") {
+       sheet.plants = sheet.floors.map((_, fi) =>
+         sheet.zones.map(z => {
+           if ((z === "B1" || z === "B2") && fi <= 1) return emptySideCell();
+           return { sow: null, plant: null };
+         })
+       );
+     } else {
+       sheet.plants = sheet.floors.map(() => sheet.zones.map(() => ({ sow: null, plant: null })));
+     }
+     localBackup();
+     if (useDB) {
+       try {
+         await apiPost("/api/clear", { sheet: currentSheet, password: pw });
+       } catch (e) {
+         console.error(e);
+         alert("서버 초기화 실패");
+         return;
+       }
+     }
+     renderBoard(currentSheet);
+     showToast("초기화됨");
+   }
    
    /* ---------- Toast / Tabs / 상태 ---------- */
    const showToast = msg => {
@@ -376,6 +425,7 @@
      if (!tabs) return;
      tabs.innerHTML = "";
      Object.keys(data).forEach(name => {
+       if (name.startsWith("_")) return;
        const btn = document.createElement("button");
        btn.className = "tab" + (name === currentSheet ? " active" : "");
        btn.textContent = name + (data[name].type === "육묘" ? " (육묘)" : "");
@@ -479,11 +529,16 @@
    
      let totalCells = 0, filled = 0, harvestSoon = 0, harvestToday = 0, harvestOver = 0;
    
-     for (let fi = 0; fi < sheet.floors.length; fi++) {
+     for (let fi = sheet.floors.length - 1; fi >= 0; fi--) {
        html += `<tr><td class="floor">${sheet.floors[fi]}</td>`;
    
        for (let zi = 0; zi < sheet.zones.length; zi++) {
          const zoneName = sheet.zones[zi];
+   
+         if (isDisabledFloor(name, zoneName, fi)) {
+           html += `<td class="disabled-floor"><span class="empty-mark">—</span></td>`;
+           continue;
+         }
    
          if (isSideCell(name, zoneName, fi)) {
            const scell = sheet.plants[fi][zi] || emptySideCell();
@@ -585,6 +640,8 @@
      const raw = (input.value || "").trim();
      const sheet = data[currentSheet];
    
+     if (isDisabledFloor(currentSheet, sheet.zones[zi], fi)) return;
+   
      if (!raw) {
        setCell(sheet, fi, zi, field, null);
        input.classList.remove("invalid");
@@ -668,6 +725,33 @@
      return currentSheet === "22-1동" ? "이식" : "정식";
    }
    
+   function fillWorkFloors() {
+     const sheet = data[currentSheet];
+     const zoneEl = document.getElementById("workZone");
+     const floorSelect = document.getElementById("workFloor");
+     if (!sheet || !zoneEl || !floorSelect) return;
+   
+     const zone = sheet.zones[+zoneEl.value || 0];
+     const prev = floorSelect.value;
+     floorSelect.innerHTML = "";
+   
+     for (let i = sheet.floors.length - 1; i >= 0; i--) {
+       if (isDisabledFloor(currentSheet, zone, i)) continue;
+       const opt = document.createElement("option");
+       opt.value = i;
+       opt.textContent = sheet.floors[i];
+       floorSelect.appendChild(opt);
+     }
+   
+     if ([...floorSelect.options].some(o => o.value === prev)) {
+       floorSelect.value = prev;
+     } else if (currentSheet === "22-1동") {
+       floorSelect.value = "2";
+     } else {
+       floorSelect.value = "0";
+     }
+   }
+   
    function createWorkRegisterUI() {
      const toolbar = document.querySelector(".toolbar");
      if (!toolbar || document.getElementById("workRegisterBtn")) return;
@@ -694,7 +778,7 @@
          <div class="work-modal-body">
            <div class="work-form-group">
              <label for="workZone">시작 행</label>
-             <select id="workZone" onchange="updateWorkPreview()"></select>
+             <select id="workZone" onchange="fillWorkFloors(); updateWorkPreview()"></select>
            </div>
            <div class="work-form-group">
              <label for="workFloor">시작 층</label>
@@ -766,6 +850,7 @@
        .work-preview-summary{margin-top:10px;padding-top:10px;border-top:1px solid var(--border);font-size:.8rem;color:var(--text-dim)}
        .work-register-warning{margin-top:12px;color:var(--red);font-size:.82rem;line-height:1.5}
        .work-modal-footer{display:flex;justify-content:flex-end;gap:8px;padding:14px 20px;border-top:1px solid var(--border)}
+       td.disabled-floor{background:var(--surface2);color:var(--text-dim);min-width:132px}
        @media(max-width:768px){.work-modal{width:calc(100vw - 20px)}}
      `;
      document.head.appendChild(style);
@@ -791,17 +876,9 @@
        zoneSelect.appendChild(opt);
      });
    
-     const floorSelect = document.getElementById("workFloor");
-     floorSelect.innerHTML = "";
-     sheet.floors.forEach((floor, i) => {
-       const opt = document.createElement("option");
-       opt.value = i;
-       opt.textContent = floor;
-       floorSelect.appendChild(opt);
-     });
-   
      zoneSelect.value = "0";
-     floorSelect.value = isNursery ? "2" : "0";
+     fillWorkFloors();
+     document.getElementById("workFloor").value = isNursery ? "2" : "0";
      document.getElementById("workCount").value = "1";
      document.getElementById("workSowDate").value = "";
      document.getElementById("workPlantDate").value = toMD(todayStr());
@@ -826,14 +903,17 @@
      while (positions.length < count && guard < 500) {
        guard++;
        if (zoneIndex >= sheet.zones.length) break;
-       if (floorIndex >= sheet.floors.length) {
+   
+       const zone = sheet.zones[zoneIndex];
+       const maxFi = maxFloorIndex(currentSheet, zone, sheet.floors.length);
+   
+       if (floorIndex > maxFi) {
          floorIndex = 0;
          zoneIndex++;
          continue;
        }
    
-       const zone = sheet.zones[zoneIndex];
-       if (!isSideCell(currentSheet, zone, floorIndex)) {
+       if (!isSideCell(currentSheet, zone, floorIndex) && !isDisabledFloor(currentSheet, zone, floorIndex)) {
          positions.push({
            zoneIndex,
            floorIndex,
@@ -843,7 +923,7 @@
        }
    
        floorIndex++;
-       if (floorIndex >= sheet.floors.length) {
+       if (floorIndex > maxFi) {
          floorIndex = 0;
          zoneIndex++;
        }
@@ -1005,8 +1085,9 @@
    (async () => {
      loadGlobalDays();
      await loadData();
+     await ensureFloorsFlipped();
      createWorkRegisterUI();
-     renderBoard(Object.keys(data)[0]);
+     renderBoard(firstSheetName());
    })();
    
    setInterval(() => {
