@@ -1,0 +1,3863 @@
+{
+  "16동": {
+    "type": "정식",
+    "formalDays": 25,
+    "zones": [
+      "B1",
+      "B2",
+      "B3",
+      "E6",
+      "E5",
+      "E4",
+      "E3",
+      "E2",
+      "E1",
+      "D6",
+      "D5",
+      "D4",
+      "D3",
+      "D2",
+      "D1",
+      "C3",
+      "C2",
+      "C1"
+    ],
+    "floors": [
+      "1층",
+      "2층",
+      "3층",
+      "4층",
+      "5층",
+      "6층",
+      "7층",
+      "8층"
+    ],
+    "plants": [
+      [
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-25",
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-25",
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-25",
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": "2026-06-01",
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-06"
+        }
+      ],
+      [
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-07-20",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": "2026-06-03",
+          "plant": "2026-07-03"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-06"
+        }
+      ],
+      [
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": "2026-06-03",
+          "plant": "2026-07-03"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-06"
+        }
+      ],
+      [
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": "2026-06-03",
+          "plant": "2026-07-03"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-06"
+        }
+      ],
+      [
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-25",
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-01",
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": "2026-06-03",
+          "plant": "2026-07-03"
+        },
+        {
+          "sow": "2026-06-05",
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": "2026-06-09",
+          "plant": "2026-07-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-06"
+        }
+      ],
+      [
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-06-30"
+        },
+        {
+          "sow": "2026-06-01",
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": "2026-06-03",
+          "plant": "2026-07-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-06"
+        }
+      ],
+      [
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-26",
+          "plant": "2026-07-24"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-15",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": "2026-06-16",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-23"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-06-30"
+        },
+        {
+          "sow": "2026-06-01",
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-06"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-06-30"
+        },
+        {
+          "sow": "2026-06-01",
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": "2026-06-04",
+          "plant": "2026-07-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-06"
+        }
+      ]
+    ],
+    "nurseryDays": 21,
+    "transplantDays": 7
+  },
+  "17동": {
+    "type": "정식",
+    "formalDays": 25,
+    "zones": [
+      "B1",
+      "B2",
+      "B3",
+      "E6",
+      "E5",
+      "E4",
+      "E3",
+      "E2",
+      "E1",
+      "D6",
+      "D5",
+      "D4",
+      "D3",
+      "D2",
+      "D1",
+      "C3",
+      "C2",
+      "C1"
+    ],
+    "floors": [
+      "1층",
+      "2층",
+      "3층",
+      "4층",
+      "5층",
+      "6층",
+      "7층",
+      "8층"
+    ],
+    "plants": [
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": "2026-05-10",
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ]
+    ],
+    "nurseryDays": 21,
+    "transplantDays": 7
+  },
+  "22-1동": {
+    "type": "육묘",
+    "formalDays": 28,
+    "zones": [
+      "A1",
+      "B1",
+      "B2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "floors": [
+      "1층",
+      "2층",
+      "3층",
+      "4층",
+      "5층",
+      "6층",
+      "7층",
+      "8층"
+    ],
+    "plants": [
+      [
+        {
+          "left": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ],
+          "right": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ]
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-18"
+        }
+      ],
+      [
+        {
+          "left": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ],
+          "right": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ]
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-25"
+        }
+      ],
+      [
+        {
+          "left": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ],
+          "right": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ]
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-25"
+        }
+      ],
+      [
+        {
+          "left": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ],
+          "right": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ]
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-25"
+        }
+      ],
+      [
+        {
+          "left": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ],
+          "right": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ]
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-02"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-25"
+        }
+      ],
+      [
+        {
+          "left": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ],
+          "right": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ]
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-25"
+        }
+      ],
+      [
+        {
+          "left": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ],
+          "right": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ]
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-25"
+        }
+      ],
+      [
+        {
+          "left": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ],
+          "right": [
+            {
+              "sow": null,
+              "trays": null
+            },
+            {
+              "sow": null,
+              "trays": null
+            }
+          ]
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-07-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-18"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-26"
+        }
+      ]
+    ],
+    "nurseryDays": 21,
+    "transplantDays": 7
+  },
+  "22동": {
+    "type": "정식",
+    "formalDays": 25,
+    "zones": [
+      "F1",
+      "F2",
+      "F3",
+      "D5",
+      "D4",
+      "D3",
+      "D2",
+      "D1",
+      "E7",
+      "E6",
+      "E5",
+      "E4",
+      "E3",
+      "E2",
+      "E1"
+    ],
+    "floors": [
+      "1층",
+      "2층",
+      "3층",
+      "4층",
+      "5층",
+      "6층",
+      "7층",
+      "8층"
+    ],
+    "plants": [
+      [
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-09"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-09"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-09"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-10"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-03"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-10"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-10"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-10"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-06-16"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-17"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-02"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-10"
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-12"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ]
+    ],
+    "nurseryDays": 21,
+    "transplantDays": 7
+  },
+  "24동": {
+    "type": "정식",
+    "formalDays": 25,
+    "zones": [
+      "E6",
+      "E5",
+      "E4",
+      "E3",
+      "E2",
+      "E1",
+      "D6",
+      "D5",
+      "D4",
+      "D3",
+      "D2",
+      "D1",
+      "C3",
+      "C2",
+      "C1"
+    ],
+    "floors": [
+      "1층",
+      "2층",
+      "3층",
+      "4층",
+      "5층",
+      "6층",
+      "7층",
+      "8층"
+    ],
+    "plants": [
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-07"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-07"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-08"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-07"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-07"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-07"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-07"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-06-07"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ]
+    ],
+    "nurseryDays": 21,
+    "transplantDays": 7
+  },
+  "25동": {
+    "type": "정식",
+    "formalDays": 25,
+    "zones": [
+      "E6",
+      "E5",
+      "E4",
+      "E3",
+      "E2",
+      "E1",
+      "D6",
+      "D5",
+      "D4",
+      "D3",
+      "D2",
+      "D1",
+      "C3",
+      "C2",
+      "C1"
+    ],
+    "floors": [
+      "1층",
+      "2층",
+      "3층",
+      "4층",
+      "5층",
+      "6층",
+      "7층",
+      "8층"
+    ],
+    "plants": [
+      [
+        {
+          "sow": "2026-07-01",
+          "plant": "2026-07-20"
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        }
+      ]
+    ],
+    "nurseryDays": 21,
+    "transplantDays": 7
+  },
+  "5동": {
+    "type": "정식",
+    "formalDays": 25,
+    "zones": [
+      "E6",
+      "E5",
+      "E4",
+      "E3",
+      "E2",
+      "E1",
+      "D6",
+      "D5",
+      "D4",
+      "D3",
+      "D2",
+      "D1",
+      "C3",
+      "C2",
+      "C1"
+    ],
+    "floors": [
+      "1층",
+      "2층",
+      "3층",
+      "4층",
+      "5층",
+      "6층",
+      "7층",
+      "8층"
+    ],
+    "plants": [
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-22"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-25"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-11"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-15"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-21"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-22"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-25"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-11"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-13"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-15"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-21"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-22"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-25"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-29"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-11"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-13"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-15"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-21"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-22"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-25"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-27"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-11"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-13"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-21"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-22"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-25"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-27"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-04"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-13"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-14"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-21"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-22"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-27"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-08"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-13"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": "2026-05-20"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-21"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-22"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-26"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-27"
+        },
+        {
+          "sow": null,
+          "plant": "2026-04-30"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-01"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-05"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-11"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-13"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-17"
+        }
+      ],
+      [
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": null
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-06"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-07"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-11"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-12"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-13"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-15"
+        },
+        {
+          "sow": null,
+          "plant": "2026-05-19"
+        }
+      ]
+    ],
+    "nurseryDays": 21,
+    "transplantDays": 7
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정식 현황판 (나주)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <div class="header">
+    <h1>🌱 정식 현황판 (나주)</h1>
+
+    <div class="header-meta">
+      <div class="meta-item">
+        <label for="nurseryDays">육묘일수</label>
+        <input type="number" id="nurseryDays" value="21" min="1" max="120">
+      </div>
+
+      <div class="meta-item">
+        <label for="transplantDays">이식일수</label>
+        <input type="number" id="transplantDays" value="7" min="1" max="120">
+      </div>
+
+      <div class="meta-item">
+        <label for="formalDays">정식일수</label>
+        <input type="number" id="formalDays" value="25" min="1" max="120">
+      </div>
+
+      <div class="meta-item">
+        <label>오늘</label>
+        <span class="today-display" id="todayDisplay"></span>
+      </div>
+
+      <div class="meta-item">
+        <span id="dbStatus">연결 확인 중…</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 동 선택 탭 -->
+  <div class="tabs" id="tabs"></div>
+
+  <!-- 툴바 -->
+  <div class="toolbar">
+    <button type="button" class="btn primary" onclick="saveData()">
+      💾 저장
+    </button>
+
+    <button type="button" class="btn" onclick="exportJSON()">
+      ⬇️ JSON 내보내기
+    </button>
+
+    <label class="btn" style="cursor:pointer;">
+      ⬆️ JSON 불러오기
+      <input type="file" accept=".json" onchange="importJSON(event)" style="display:none;">
+    </label>
+
+    <button type="button" class="btn danger" onclick="clearCurrentSheet()">
+      🗑️ 초기화
+    </button>
+
+    <div class="legend">
+      <span><span class="dot" style="background:var(--green);"></span> 여유</span>
+      <span><span class="dot" style="background:var(--yellow);"></span> 주의 (D-7~)</span>
+      <span><span class="dot" style="background:var(--orange);"></span> 임박 (D-3~)</span>
+      <span><span class="dot" style="background:var(--red);"></span> 수확일/초과</span>
+    </div>
+  </div>
+
+  <!-- 현황판 -->
+  <div class="board-wrap">
+    <table class="board" id="board"></table>
+  </div>
+
+  <!-- 하단 상태바 -->
+  <div class="status-bar" id="statusBar"></div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
