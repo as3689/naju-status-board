@@ -325,28 +325,43 @@
      reader.readAsText(file);
      ev.target.value = "";
    };
-   
+   const CLEAR_PASSWORD = "farm1234";
    async function clearCurrentSheet() {
-     if (!currentSheet || !data[currentSheet]) return;
-     if (!confirm("현재 동의 모든 날짜를 지우시겠습니까?")) return;
-     const sheet = data[currentSheet];
-     if (currentSheet === "22-1동") {
-       sheet.plants = sheet.floors.map((_, fi) =>
-         sheet.zones.map(z => {
-           if ((z === "B1" || z === "B2") && fi <= 1) return emptySideCell();
-           return { sow: null, plant: null };
-         })
-       );
-     } else {
-       sheet.plants = sheet.floors.map(() => sheet.zones.map(() => ({ sow: null, plant: null })));
-     }
-     localBackup();
-     if (useDB) {
-       try { await apiPost("/api/clear", { sheet: currentSheet }); } catch (e) { console.error(e); }
-     }
-     renderBoard(currentSheet);
-     showToast("초기화됨");
-   }
+    if (!currentSheet || !data[currentSheet]) return;
+  
+    const pw = prompt("초기화 비밀번호를 입력하세요");
+    if (pw !== CLEAR_PASSWORD) {
+      alert("비밀번호가 올바르지 않습니다.");
+      return;
+    }
+  
+    if (!confirm("현재 동의 모든 날짜를 지우시겠습니까?")) return;
+  
+    const sheet = data[currentSheet];
+    if (currentSheet === "22-1동") {
+      sheet.plants = sheet.floors.map((_, fi) =>
+        sheet.zones.map(z => {
+          if ((z === "B1" || z === "B2") && fi <= 1) return emptySideCell();
+          return { sow: null, plant: null };
+        })
+      );
+    } else {
+      sheet.plants = sheet.floors.map(() => sheet.zones.map(() => ({ sow: null, plant: null })));
+    }
+  
+    localBackup();
+    if (useDB) {
+      try {
+        await apiPost("/api/clear", { sheet: currentSheet, password: pw });
+      } catch (e) {
+        console.error(e);
+        alert("서버 초기화 실패");
+        return;
+      }
+    }
+    renderBoard(currentSheet);
+    showToast("초기화됨");
+  }
    
    /* ---------- Toast / Tabs / 상태 ---------- */
    const showToast = msg => {
