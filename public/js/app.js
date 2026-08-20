@@ -4,7 +4,7 @@
 
    const STORAGE_KEY = "naju_status_board_v2";
    const DAYS_KEY = "naju_days_settings";
-   const API = "http://15.165.142.231:3000";
+   const API = "http://15.165.142.231:3001";
    
    let data = null;
    let currentSheet = null;
