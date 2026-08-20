@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://15.165.142.231:3001/api/:splat"
+  status = 200
+  force = true
